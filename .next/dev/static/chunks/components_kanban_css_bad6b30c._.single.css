@@ -1,0 +1,171 @@
+/* [project]/components/kanban.css [app-client] (css) */
+.kanban-board {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  min-height: 600px;
+  margin-top: 24px;
+  display: grid;
+}
+
+.kanban-column {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  background: #1a1a2e99;
+  border: 1px solid #8b5cf61a;
+  border-radius: 12px;
+  flex-direction: column;
+  transition: all .3s;
+  display: flex;
+}
+
+.light .kanban-column {
+  background: #ffffffb3;
+  border-color: #6366f11a;
+}
+
+.column-header {
+  border-bottom: 2px solid #8b5cf61a;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  display: flex;
+}
+
+.light .column-header {
+  border-bottom-color: #6366f133;
+}
+
+.column-header h3 {
+  color: #e8e8ff;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.light .column-header h3 {
+  color: #1a1a2e;
+}
+
+.column-count {
+  color: #fff;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  border-radius: 12px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.column-content {
+  flex-direction: column;
+  flex: 1;
+  gap: 12px;
+  padding: 12px;
+  display: flex;
+  overflow-y: auto;
+}
+
+.kanban-card {
+  cursor: move;
+  color: #e8e8ff;
+  background: #1f293766;
+  border: 1px solid #8b5cf61a;
+  border-radius: 10px;
+  padding: 12px;
+  transition: all .2s;
+  box-shadow: 0 4px 12px #0000001a;
+}
+
+.light .kanban-card {
+  color: #1a1a2e;
+  background: #ffffffe6;
+  box-shadow: 0 2px 8px #00000014;
+}
+
+.kanban-card:hover {
+  border-color: #8b5cf64d;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px #6366f133;
+}
+
+.kanban-card.priority-high {
+  border-left-color: #ef4444;
+}
+
+.kanban-card.priority-medium {
+  border-left-color: #f59e0b;
+}
+
+.kanban-card.priority-low {
+  border-left-color: #10b981;
+}
+
+.card-content {
+  margin-bottom: 8px;
+}
+
+.card-title-row {
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 4px;
+  display: flex;
+}
+
+.priority-icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  font-size: 16px;
+}
+
+.card-title {
+  word-break: break-word;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.card-description {
+  opacity: .8;
+  color: #cbd5e1;
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.light .card-description {
+  color: #64748b;
+}
+
+.card-meta {
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 11px;
+  display: flex;
+}
+
+.card-category, .card-date {
+  color: #c4b5fd;
+  background: #8b5cf61a;
+  border: 1px solid #8b5cf633;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.light .card-category, .light .card-date {
+  color: #6366f1;
+  background: #6366f11a;
+  border-color: #6366f133;
+}
+
+@media (max-width: 1024px) {
+  .kanban-board {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .kanban-board {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=components_kanban_css_bad6b30c._.single.css.map*/

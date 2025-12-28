@@ -1,0 +1,195 @@
+/* [project]/task-manager-project (4)/components/calendar.css [app-client] (css) */
+.calendar-view {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  background: #1a1a2e99;
+  border: 1px solid #8b5cf61a;
+  border-radius: 12px;
+  margin-top: 24px;
+  padding: 20px;
+  box-shadow: 0 10px 30px #0003;
+}
+
+.light .calendar-view {
+  background: #ffffffb3;
+  border-color: #6366f11a;
+  box-shadow: 0 4px 12px #00000014;
+}
+
+.calendar-header {
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.calendar-header button {
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all .3s;
+}
+
+.calendar-header button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px #6366f14d;
+}
+
+.calendar-header h2 {
+  color: #e8e8ff;
+  text-align: center;
+  flex: 1;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.light .calendar-header h2 {
+  color: #1a1a2e;
+}
+
+.calendar-grid {
+  background: #8b5cf61a;
+  border: 1px solid #8b5cf61a;
+  border-radius: 8px;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+  display: grid;
+  overflow: hidden;
+}
+
+.calendar-day-header {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  padding: 12px 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.calendar-day {
+  color: #e8e8ff;
+  background: #1f293766;
+  border-bottom: 1px solid #8b5cf61a;
+  border-right: 1px solid #8b5cf61a;
+  min-height: 100px;
+  padding: 8px;
+  font-size: 12px;
+  position: relative;
+}
+
+.light .calendar-day {
+  color: #1a1a2e;
+  background: #ffffffe6;
+  border-bottom-color: #6366f11a;
+  border-right-color: #6366f11a;
+}
+
+.calendar-day.empty {
+  background: #0f0f1e4d;
+}
+
+.light .calendar-day.empty {
+  background: #f5f5ff80;
+}
+
+.day-number {
+  color: #6366f1;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.light .day-number {
+  color: #4f46e5;
+}
+
+.day-tasks {
+  flex-direction: column;
+  gap: 4px;
+  display: flex;
+}
+
+.tasks-list {
+  flex-direction: column;
+  gap: 3px;
+  display: flex;
+}
+
+.task-item {
+  cursor: pointer;
+  background: #6366f11a;
+  border: 1px solid #8b5cf633;
+  border-radius: 4px;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 4px;
+  font-size: 11px;
+  transition: all .2s;
+  display: flex;
+}
+
+.light .task-item {
+  background: #6366f114;
+  border-color: #6366f126;
+}
+
+.task-item:hover {
+  background: #6366f133;
+  border-color: #6366f166;
+}
+
+.task-dot {
+  flex-shrink: 0;
+  font-size: 12px;
+}
+
+.task-name {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #cbd5e1;
+  flex: 1;
+  overflow: hidden;
+}
+
+.light .task-name {
+  color: #64748b;
+}
+
+.task-more {
+  color: #6366f1;
+  padding: 2px 4px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.light .task-more {
+  color: #4f46e5;
+}
+
+@media (max-width: 768px) {
+  .calendar-day {
+    min-height: 70px;
+  }
+
+  .calendar-day-header {
+    padding: 8px 4px;
+    font-size: 10px;
+  }
+
+  .day-tasks {
+    gap: 2px;
+  }
+
+  .task-item {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=task-manager-project%20%284%29_components_calendar_css_bad6b30c._.single.css.map*/

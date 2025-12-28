@@ -1,0 +1,36 @@
+[00:00:01.772] Server  LOG      ✓ Ready in 1234ms
+[00:00:09.871] Server  LOG      ○ Compiling / ...
+[00:00:14.397] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:15.181] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:15.181] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:15.181] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766725103016}
+[00:00:17.027] Server  LOG      ○ Compiling /_not-found/page ...
+[00:00:17.091] Browser ERROR   WELLDONE Wallet is not initialized
+[00:00:17.378] Browser ERROR   Failed to fetch tasks: 401 {"error":"Unauthorized"}
+[00:00:17.524] Browser ERROR   Failed to fetch tasks: 401 {"error":"Unauthorized"}
+[00:00:48.048] Browser ERROR   WELLDONE Wallet is not initialized
+[00:01:40.203] Browser ERROR   WELLDONE Wallet is not initialized
+[00:02:13.164] Browser ERROR   WELLDONE Wallet is not initialized
+[00:02:22.908] Browser ERROR   WELLDONE Wallet is not initialized
+[00:02:47.308] Browser ERROR   WELLDONE Wallet is not initialized
+[00:02:52.759] Browser ERROR   uncaughtError: TypeError: Cannot convert undefined or null to object
+[00:04:12.742] Browser ERROR   WELLDONE Wallet is not initialized
+[00:04:13.149] Browser ERROR   WELLDONE Wallet is not initialized
+[00:04:14.850] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:15.264] Browser ERROR   Failed to fetch tasks: 401 {"error":"Unauthorized"}
+[00:04:15.264] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:04:15.264] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:04:15.264] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766725343048}
+[00:04:15.446] Browser ERROR   Failed to fetch tasks: 401 {"error":"Unauthorized"}
+[00:04:42.922] Browser ERROR   WELLDONE Wallet is not initialized
+[00:04:52.090] Browser ERROR   WELLDONE Wallet is not initialized
+[00:04:59.296] Browser ERROR   WELLDONE Wallet is not initialized
+[00:05:09.248] Browser ERROR   WELLDONE Wallet is not initialized
+[00:05:13.136] Browser ERROR   WELLDONE Wallet is not initialized
+[00:05:21.680] Browser ERROR   WELLDONE Wallet is not initialized
+[00:05:27.715] Browser ERROR   WELLDONE Wallet is not initialized
+[00:05:39.604] Browser ERROR   WELLDONE Wallet is not initialized
+[00:05:43.663] Browser ERROR   WELLDONE Wallet is not initialized
+[00:06:07.230] Browser ERROR   WELLDONE Wallet is not initialized
+[00:06:13.819] Browser ERROR   WELLDONE Wallet is not initialized
+[00:06:26.724] Browser ERROR   WELLDONE Wallet is not initialized

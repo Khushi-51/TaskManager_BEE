@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/task-manager-project (4)/components/search-filter.css"],"sourcesContent":[".search-filter {\n  margin: 20px 0;\n}\n\n.search-container {\n  display: flex;\n  gap: 12px;\n  margin-bottom: 12px;\n}\n\n.search-input {\n  flex: 1;\n  padding: 12px;\n  border: 1px solid #ddd;\n  border-radius: 6px;\n  font-size: 14px;\n}\n\n.advanced-btn {\n  padding: 12px 20px;\n  background: #667eea;\n  color: white;\n  border: none;\n  border-radius: 6px;\n  cursor: pointer;\n  font-weight: 600;\n  transition: background 0.3s;\n}\n\n.advanced-btn:hover {\n  background: #764ba2;\n}\n\n.advanced-filters {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));\n  gap: 12px;\n  padding: 16px;\n  background: #f9f9f9;\n  border-radius: 6px;\n  margin-bottom: 12px;\n}\n\n.advanced-filters select {\n  padding: 10px;\n  border: 1px solid #ddd;\n  border-radius: 4px;\n  font-size: 14px;\n  background: white;\n}\n\n@media (max-width: 768px) {\n  .search-container {\n    flex-direction: column;\n  }\n\n  .advanced-filters {\n    grid-template-columns: 1fr;\n  }\n}\n"],"names":[],"mappings":"AAAA;;;;AAIA;;;;;;AAMA;;;;;;;;AAQA;;;;;;;;;;;AAWA;;;;AAIA;;;;;;;;;;AAUA;;;;;;;;AAQA;EACE;;;;EAIA"}}]
+}

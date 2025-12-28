@@ -1,0 +1,12 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/analytics/route": "app/api/analytics/route.js",
+  "/api/auth/login/route": "app/api/auth/login/route.js",
+  "/api/auth/register/route": "app/api/auth/register/route.js",
+  "/api/tasks/[id]/route": "app/api/tasks/[id]/route.js",
+  "/api/tasks/[id]/subtasks/route": "app/api/tasks/[id]/subtasks/route.js",
+  "/api/tasks/route": "app/api/tasks/route.js",
+  "/api/templates/route": "app/api/templates/route.js",
+  "/page": "app/page.js"
+}

@@ -1,0 +1,63 @@
+/* [project]/task-manager-project (4)/components/search-filter.css [app-client] (css) */
+.search-filter {
+  margin: 20px 0;
+}
+
+.search-container {
+  gap: 12px;
+  margin-bottom: 12px;
+  display: flex;
+}
+
+.search-input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  flex: 1;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.advanced-btn {
+  color: #fff;
+  cursor: pointer;
+  background: #667eea;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-weight: 600;
+  transition: background .3s;
+}
+
+.advanced-btn:hover {
+  background: #764ba2;
+}
+
+.advanced-filters {
+  background: #f9f9f9;
+  border-radius: 6px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-bottom: 12px;
+  padding: 16px;
+  display: grid;
+}
+
+.advanced-filters select {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column;
+  }
+
+  .advanced-filters {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=task-manager-project%20%284%29_components_search-filter_css_bad6b30c._.single.css.map*/

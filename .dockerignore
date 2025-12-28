@@ -1,0 +1,28 @@
+# Node & Editor
+node_modules
+.vscode
+.DS_Store
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Next build outputs
+.next
+out
+
+# Local env files
+.env
+.env.local
+.env.*
+
+# Git
+.git
+.gitignore
+
+# Client build (if present)
+client/node_modules
+client/dist
+client/build
+
+# logs
+*.log

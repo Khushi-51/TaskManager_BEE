@@ -1,0 +1,44 @@
+services:
+  mongo:
+    image: mongo:6
+    restart: unless-stopped
+    volumes:
+      - mongo-data:/data/db
+    ports:
+      - "27017:27017"
+
+  redis:
+    image: redis:7
+    restart: unless-stopped
+    volumes:
+      - redis-data:/data
+    ports:
+      - "6379:6379"
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - NODE_ENV=production
+    environment:
+      - MONGODB_URI=mongodb://mongo:27017/taskManager
+      - REDIS_URL=redis://redis:6379
+      - JWT_SECRET=your-jwt-secret
+      - PORT=${PORT:-3000}
+      - NODE_ENV=production
+    ports:
+      - "${PORT:-3000}:${PORT:-3000}"
+    depends_on:
+      - mongo
+      - redis
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:${PORT:-3000}/healthz || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
+
+volumes:
+  mongo-data:
+  redis-data:

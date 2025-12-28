@@ -1,0 +1,12 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/analytics/route": "/api/analytics",
+  "/api/auth/login/route": "/api/auth/login",
+  "/api/auth/register/route": "/api/auth/register",
+  "/api/tasks/[id]/route": "/api/tasks/[id]",
+  "/api/tasks/[id]/subtasks/route": "/api/tasks/[id]/subtasks",
+  "/api/tasks/route": "/api/tasks",
+  "/api/templates/route": "/api/templates",
+  "/page": "/"
+}

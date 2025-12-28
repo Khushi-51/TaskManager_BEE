@@ -1,0 +1,170 @@
+/* [project]/components/dashboard.css [app-client] (css) */
+.dashboard {
+  padding: 20px 0;
+}
+
+.dashboard h2 {
+  color: #667eea;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.stats-grid {
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+  display: grid;
+}
+
+.stat-card {
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px #0000001a;
+}
+
+.stat-card.primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.stat-card.success {
+  background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+}
+
+.stat-card.warning {
+  background: linear-gradient(135deg, #ffc107 0%, #ffb300 100%);
+}
+
+.stat-card.info {
+  background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%);
+}
+
+.stat-card.danger {
+  background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%);
+}
+
+.stat-card.secondary {
+  background: linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%);
+}
+
+.stat-value {
+  margin-bottom: 8px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.stat-label {
+  opacity: .9;
+  font-size: 14px;
+}
+
+.analytics-row {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  display: grid;
+}
+
+.chart-container {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px #0000001a;
+}
+
+.chart-container h3 {
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.priority-breakdown {
+  flex-direction: column;
+  gap: 12px;
+  display: flex;
+}
+
+.priority-item {
+  align-items: center;
+  gap: 8px;
+  display: flex;
+}
+
+.priority-name {
+  color: #666;
+  min-width: 60px;
+  font-size: 14px;
+}
+
+.progress-bar {
+  background: #e0e0e0;
+  border-radius: 4px;
+  flex: 1;
+  height: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  transition: width .3s;
+}
+
+.progress-fill.high {
+  background: #f44336;
+}
+
+.progress-fill.medium {
+  background: #ffc107;
+}
+
+.progress-fill.low {
+  background: #4caf50;
+}
+
+.priority-count {
+  text-align: right;
+  color: #667eea;
+  min-width: 30px;
+  font-weight: 600;
+}
+
+.category-breakdown {
+  flex-direction: column;
+  gap: 8px;
+  display: flex;
+}
+
+.category-item {
+  background: #f5f5f5;
+  border-radius: 4px;
+  justify-content: space-between;
+  padding: 8px;
+  display: flex;
+}
+
+.category-name {
+  color: #333;
+  font-size: 14px;
+}
+
+.category-count {
+  color: #667eea;
+  font-weight: 600;
+}
+
+.dashboard-loading {
+  text-align: center;
+  color: #999;
+  padding: 40px;
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .analytics-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=components_dashboard_css_bad6b30c._.single.css.map*/
